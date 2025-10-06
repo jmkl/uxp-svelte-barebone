@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 import { viteStaticCopy } from "vite-plugin-static-copy";
-import { runAction, uxp, uxpSetup } from "vite-uxp-plugin";
+import { uxp } from "vite-uxp-plugin";
 import { config } from "./uxp.config";
 
 const mode = process.env.MODE;

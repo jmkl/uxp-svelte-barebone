@@ -19,7 +19,7 @@ const manifest: UXP_Manifest = {
     localFileSystem: "fullAccess",
     clipboard: "readAndWrite",
     network: {
-      domains: ["all"],
+      domains: ["ws://localhost:8087"],
     },
     allowCodeGenerationFromStrings: true,
     launchProcess: {
@@ -65,7 +65,7 @@ const manifest: UXP_Manifest = {
     {
       width: 48,
       height: 48,
-      path: "icons/plugin.png",
+      path: "icons/light.png",
       scale: [1, 2],
       theme: ["dark", "darkest", "medium", "lightest", "light", "all"],
       species: ["pluginList"],
@@ -74,6 +74,6 @@ const manifest: UXP_Manifest = {
 };
 export const config: UXP_Config = {
   manifest,
-  hotReloadPort: 8089,
-  copyZipAssets: ["public-zip/*"],
+  hotReloadPort: 8087,
+  copyZipAssets: ["pub/*"],
 };
